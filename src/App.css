@@ -1,0 +1,609 @@
+
+
+/*CSS RESET*/
+* {
+  margin:0;
+  padding:0;
+  font:inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+
+/*FONTS--------------------------------------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/bahnschrift');
+
+a {text-decoration: none;}
+ul, ol {list-style: none;}
+
+h1 { /*Øverst på siden*/
+  font-family: 'Rammetto One';
+  font-size: 32px;
+  text-transform: uppercase;
+  color:#ff7955;
+}
+
+h2 {
+  font-family: 'Rammetto One';
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: 'Bahnschrift', sans-serif;
+}
+
+
+h4 {
+  font-family: 'Rammetto One';
+  font-size: 20px;
+}
+
+p, input,a, button, label {
+  font-size: 18px;
+  font-family: 'Bahnschrift', sans-serif;
+}
+
+.mini {font-size: 14px;}
+
+.bold {
+  font-weight: 400;
+}
+
+/*SPACE BETWEEN*/
+.space8 {
+  margin-bottom: 8px;
+}
+
+.space16 {
+  margin-bottom: 16px;
+}
+
+.space24 {
+  margin-bottom: 24px;
+}
+
+.space32 {
+  margin-bottom: 32px;
+}
+
+
+/*COLORS*/
+.white {color: #fcfaef;}
+.orange {color:#ff7955}
+.lightbeige {color: #a39988;}
+.beige {color: #7e7360;}
+
+
+/*BUTTONS*/
+.square {
+  width: 100%;
+  max-width: 350px; 
+  height: 100px; 
+  background-color: #fcfaef; 
+  margin-right: 0;
+  margin-left: 0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: rgba(169, 51, 0, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  align-items: center;
+  border-color: transparent;
+  text-align: start;
+}
+
+
+.orangebtn {
+  border-radius: 12px;
+  background-color: #ff7955;
+  padding: 20px;
+  color:#fcfaef;
+  min-width: 200px;
+  text-align: center;
+}
+
+.whitebtn {
+  border-radius: 12px;
+  background-color: #fcfaef;
+  padding: 20px;
+  color:#7e7360;
+  min-width: 200px;
+  text-align: center;
+}
+
+/*Generelle ting*/
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height:50px;
+  margin-bottom:24px;
+  border-radius: 12px;
+  padding: 8px;
+  background-color:#ffffff44;
+  border-color: #dbd0bd;
+  border: solid 2px #a3998863;
+}
+
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+/*ONBOARDING---------------------------------------------------------------------------------*/
+.onboarding{
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  padding-top:64px;
+}
+
+/*Loading*/
+.loading {
+  background: rgb(255,121,85);
+  background: linear-gradient(0deg, rgba(255,121,85,1) 0%, rgba(255,132,99,1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20vh;
+  position: relative;
+  /*background: linear-gradient(0deg, rgb(252, 250, 239) 0%, rgb(252, 239, 239) 100%)*/
+}
+
+.zoo {
+  font-size: 120px;
+  margin-top:-30px;
+}
+
+.jyllandspark {
+  font-size: 30px;
+}
+
+.logo{
+  text-align: center;
+  animation: grow 2s; 
+  animation-iteration-count: 1;
+  /*text-shadow: 0 13.36px 8.896px #ffdfd0,0 -2px 1px #fff;*/
+}
+
+@keyframes grow {
+  0% { transform: scale(0.5); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.elefant {
+  position: absolute;
+  bottom: 60px;
+  right: -1px;
+  max-width:70vw;
+}
+
+
+/*Velkommen*/
+.velkommen {
+  background: rgb(255,121,85);
+  background: linear-gradient(0deg, rgba(255,121,85,1) 0%, rgba(255,132,99,1) 100%);
+}
+
+/*Lav profil*/
+.lavprofil{
+  background-color: #fcfaef;
+  display: grid;
+  height: 100vh; /* Make the grid container take up the full viewport height */
+  grid-template-rows: auto auto;
+  gap: 1fr;
+}
+
+.btnandhelp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+
+
+
+/*Scan armbånd*/
+.scanarmbaand {
+  background-color: #fcfaef;
+  display: grid;
+  height: 100vh; /* Make the grid container take up the full viewport height */
+  grid-template-rows: auto auto;
+  gap: 1fr;
+}
+
+.scan-animation {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*Navn*/
+.navn {
+  background-color: #fcfaef;
+  display: grid;
+  height: 100vh; /* Make the grid container take up the full viewport height */
+  grid-template-rows: auto auto;
+  gap: 1fr;}
+
+/*Aktivearmbånd*/
+.aktivearmbaand {
+  background-color: #fcfaef;
+  display: grid;
+  height: 100vh; /* Make the grid container take up the full viewport height */
+  grid-template-rows: auto auto;
+  gap: 1fr;
+}
+
+.elefanticon {
+  max-width: 70px;
+  margin-right: 20px;
+}
+
+
+
+.addicon {
+  min-width: 65px;
+  max-width: 70px;
+  margin-right: 20px;
+  border: 3px dotted #dbd0bd;
+  border-radius: 100px;
+}
+
+.armbaand {
+  background-color: #fcfaef;
+}
+
+/*APP----------------------------------------------------------------------------------------------------*/
+.app{
+  width: 100vw;
+  min-height: 100vh;
+  padding-top:32px;
+  padding-bottom:32px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+
+.categoryimage {
+  padding: 24px;
+  width:90vw;
+  height: 20vh;
+  background-image: url('../src/photos/armbaandpige.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 80%;
+  margin-bottom: 24px;
+  border-radius: 20px;
+  max-width: 350px; 
+}
+
+.billet {
+  background-color: #fcfaef;
+}
+
+.categoryimagebillet {
+  padding: 24px;
+  width:90vw;
+  height: 20vh;
+  background-image: url('../src/photos/family.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 90%;
+  margin-bottom: 24px;
+  border-radius: 20px;
+  max-width: 350px; 
+}
+
+/*Underholdning*/
+
+.categoryimageunderholdning {
+  padding: 24px;
+  width:90vw;
+  height: 20vh;
+  opacity: 90%;
+  margin-bottom: 24px;
+  border-radius: 20px;
+  max-width: 350px; 
+  display: flex;
+  align-items: end;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.panda {
+  background-image: url('../src/photos/panda.jpg');
+}
+
+.flamingo {
+  background-image: url('../src/photos/flamingo.jpg');
+}
+
+.giraf {
+  background-image: url('../src/photos/giraf.jpg');
+}
+
+.sloth {
+  background-image: url('../src/photos/sloth.jpg');
+}
+
+.tiger {
+  background-image: url('../src/photos/tiger.jpg');
+}
+
+.abekat {
+  background-image: url('../src/photos/abekat.jpg');
+}
+
+.zoopasser {
+  background-image: url('../src/photos/zoopasser.jpg');
+}
+
+.rodpanda {
+  background-image: url('../src/photos/rodpanda.jpg');
+}
+
+.gepard {
+  background-image: url('../src/photos/gepard.jpg');
+}
+
+.underholdning {
+  background-color: #fcfaef;
+
+}
+
+.weekdays-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.weekday-button {
+  margin-bottom: 8px;
+  padding: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: rgba(169, 51, 0, 0.2) 0px 2px 8px 0px;
+  border-radius: 100px;
+}
+
+.active-button {
+  background-color: #ff7955;
+  color: #fcfaef;
+}
+
+.weekday-button:hover {
+  background-color: #ff7955;
+  color: #fcfaef;
+}
+
+.cardtext {
+  max-width: 150px;
+  min-width:fit-content;
+  background-color: #ff7955;
+  border-radius: 12px;
+  box-shadow: rgba(169, 51, 0, 0.2) 0px 2px 8px 0px;
+  padding: 8px;
+}
+
+.solid-background {
+  background-color: #ff7955; 
+  padding: 24px;
+  width:90vw;
+  height: 20vh;
+  margin-bottom: 24px;
+  border-radius: 20px;
+  max-width: 350px;
+}
+
+.space100 { /*Til det nederste kort*/
+  margin-bottom: 100px;
+}
+
+/*Barn profil*/
+.barnsprofil {
+  background-color: #fcfaef;
+  position: relative;
+}
+
+.categoryimagebarnprofil {
+  padding: 24px;
+  width:90vw;
+  height: 30vh;
+  background-image: url('../src/photos/barnkort-01.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 80%;
+  margin-bottom: 24px;
+  border-radius: 20px;
+  max-width: 350px; 
+  box-shadow: rgba(169, 51, 0, 0.2) 0px 2px 8px 0px;
+}
+
+.money {
+  font-weight: 800;
+  margin-left: 20px;
+}
+
+.cross{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+}
+
+/*Fejlside*/
+.fejlside {
+  background-color: #ff7955;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.abe {
+  max-width: 100px;
+}
+
+/*NAV---------------------------------------*/
+.bottom-navigation {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 90vw;
+  height: 90px;
+  background-color: #557465;
+  border-radius: 12px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.Navikon {
+  min-width: 60px;
+}
+
+.menu a.active {
+  background-color: #ff7955;
+  border-radius: 100px;
+}
+
+@media (max-width: 470px) {
+  .mobile {
+    display:block;
+  }
+
+  .computer {
+    display: none;
+  }
+}
+
+
+@media (min-width: 470px) {
+  .velkommen{
+    padding: 0px;
+    margin: 0px;
+    background-color: #ff7955;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .mobile {
+    display:none;
+  }
+
+  .computer {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .computertext {
+    background-color:#fcfaef;
+    padding: 32px;
+    border-radius: 20px;
+    max-width: 800px;
+    box-shadow: rgba(169, 51, 0, 0.2) 0px 2px 8px 0px;
+  }
+
+  p {font-size: 30px;
+    line-height: 40px;}
+
+  h1 {font-size: 100px;}
+}
+
+/*Scanning page---------------------------------------------------*/
+.scanning-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color:#fcfaef;
+}
+
+.animation-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #dbd0bd;
+  border-top-color: #f37021;
+  animation: spin 1s linear infinite;
+}
+
+.tick {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  transform-origin: bottom left;
+  animation: tick 0.5s ease-in-out 1s forwards;
+  background-image: url('../src/photos/tick.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
